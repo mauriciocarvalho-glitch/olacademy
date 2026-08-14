@@ -551,7 +551,7 @@ const ADMIN_PASSCODE = 'olaclick2026';
    Isso agora é obrigatório para o Painel CS funcionar, já que o
    portal está hospedado fora do Claude — sem essa URL, você não
    tem visibilidade de quem acessou/concluiu o treinamento. */
-const SHEET_WEBHOOK_URL = 'REPLACE_WEBHOOK_URL';
+const SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzMs_LN-YA3R2KOsKTuqG1gNyPL9hL544OE3w6G-wcplYPWwBF379dg1NjoymRQegH5/exec';
 
 function logToSheet(evento, modulo, detalhe){
   if(!SHEET_WEBHOOK_URL || SHEET_WEBHOOK_URL.indexOf('REPLACE_') === 0) return;
